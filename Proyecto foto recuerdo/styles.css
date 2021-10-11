@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root{
+    --mainColor:#B05042;
+    --secondColor:#DEE2CB;
+    --opcionalColor:#9EB9A8;
+    --opcionalColorContrast:#759581;
+    --textColor:#314b3b;
+}
+
+body{
+    background-color: var(--mainColor) ;
+    
+}
+
+.cabecera{
+    width: 100vw;
+    height: 150px;
+    padding: 30px;
+}
+.main{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 1328px;
+    height: auto;
+
+
+}
+input[type="file"]{
+    display: none;
+}
+#inputFile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    font-weight: 400;
+    text-transform: none;
+    color: var(--opcionalColorContrast);
+    border: 1px solid var(--opcionalColorContrast);
+    padding: 10px;
+
+}
+.fa-camera{
+    font-size: 20pt;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 478px;
+    height: 700px;
+    border-radius: 23px;
+    background-color: var(--secondColor);
+    padding: 40px;
+}
+
+.preview{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 700px;
+    background-color: #fff;
+}
+
+.insertImg{
+    display: flex;
+    background-color: var(--secondColor);
+    margin-top: 37.5px;
+    width: 625px;
+    height: 570px;
+    overflow: hidden;
+}
+label{
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+input, textarea{
+    height: 40px;
+    margin: 5px 0px 15px;
+    padding: 6px;
+    color: var(--textColor);
+    font-size: 12pt;
+    background-color: var(--secondColor);
+    border: 1px solid var(--opcionalColorContrast);
+}
+input:focus , textarea{outline:none; }
+
+#nota{
+    min-height: 200px;
+    resize: none;
+    
+}
+
+.btns{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+#volver, #menuOpcion{
+    color: var(--mainColor);
+    margin-bottom: 25px;  
+}
+
+.btn{
+    width: 156px;
+    height: 50px;
+    color: #fff;
+    background-color: var(--opcionalColor);
+    border: none;
+}
+
+#rest{
+    background-color: var(--mainColor);
+}
+
+#previewImage{
+    object-fit: cover;
+}

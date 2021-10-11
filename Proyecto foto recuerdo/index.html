@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+    <title>Proyecto foto recuerdo</title>
+</head>
+<body>
+    <div class="cabecera">
+        <!-- <h1>Logo</h1> -->
+    </div>
+    
+    <div class="main">
+
+        <form class="container">
+            <div class="menuOpcion">
+                <a id="volver" href="#">← volver</a>
+            </div>
+            <input type="file" name="file" id="file">
+            <label for="file" id="inputFile"><i class="fas fa-camera"></i>Carga tu imagen aqui</label>
+            
+            <label>Titulo</label>
+            <input type="text" name="titulo" id="titulo">
+            <label>Fecha</label>
+            <input type="date" id="fecha">
+            <label>Nota</label>
+            
+            <textarea id="nota" name="nota"></textarea>
+    
+            <div class="btns">
+                <button id="save" class="btn">Guardar</button>
+                <button id="rest" class="btn">Restablecer</button>
+            </div>
+
+        </form>
+        <section class="preview">
+            <div class="insertImg">
+                <img src="" id="previewImage" >
+            </div>
+
+        </section>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
